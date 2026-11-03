@@ -17,6 +17,9 @@ model User {
 
   @@unique([email])
   @@map("user")
+
+  patient Patient? 
+  doctor Doctor?
 }
 
 model Session {
