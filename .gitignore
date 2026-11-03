@@ -5,4 +5,5 @@ dist
 .agents 
 .claude 
 .windsurf
-/generated/prisma
+/generated/prisma 
+/src/generated
