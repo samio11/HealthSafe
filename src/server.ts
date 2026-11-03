@@ -1,13 +1,13 @@
 import { Server } from "http";
 import app from "./app";
+import { config } from "./app/config";
 
 let server:Server 
-const port = 5000
 
 async function startServer() {
     try{
-        server = app.listen(port,()=>{
-        console.log(`Server Runs:- http://localhost:${port}`)
+        server = app.listen(config.PORT,()=>{
+        console.log(`Server Runs:- http://localhost:${config.PORT}`)
     }) 
     } 
     catch(err){
